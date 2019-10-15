@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Photos</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/css/uikit.min.css" />
+
+        <!-- UIkit JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit-icons.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+        <script> 
+            $(function(){
+                $("#navbar").load("navbar.html"); 
+            });
+        </script>
+
+    </head>
+    <body>
+        <div id="navbar"></div>
+
+        <div class="uk-height-large uk-background-cover uk-overflow-hidden uk-dark uk-flex uk-flex-top " style="background-image: url('images/home.jpeg');">
+            <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical uk-flex-inline">
+                <h1 uk-parallax="opacity: 0,1,1; y: 0,0,0; x: -100,-50,0; scale: 2,1,1; viewport: 0.5;"></h1>
+                <h1 uk-parallax="opacity: 0,1,1; y: 0,0,0; x: -100,-50,0; scale: 2,1,1; viewport: 0.5;" >ezra</h1>
+                <h1 uk-parallax="opacity: 0,1,1; y: 100,0,0; x: -50,-50,0; scale: 2,1,1; viewport: 0.5;">bernstein</h1>
+                <h1 uk-parallax="opacity: 0,0,1; y: 0,0,0; x: 100,50,0; scale: 2,1,1; viewport: 0.5;">.com</h1>
+            </div>
+        </div>
+
+        
+        <!--<div class="uk-inline">
+            <img src="images/home2.jpeg" alt="">
+            <div class="uk-position-cover uk-flex uk-flex-center uk-flex-middle">Cover</div>
+        </div>-->
+        
+
+        <div class="uk-child-width-1-1@s uk-light uk-margin-small-top uk-margin-small-bottom" uk-grid>
+            <div>
+                <div class="uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(images/home2.jpeg);">
+                    <p class="uk-h4 uk-text-lead">PROJECTS</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-position-relative uk-visible-toggle uk-dark" tabindex="-1" uk-slideshow="animation: pull; autoplay: true; autoplay-interval: 3000">
+                <ul class="uk-slideshow-items">
+                <li>
+                   <img src="projects/braille_vote.jpg" alt="" uk-cover uk-img="target: !.uk-slideshow-items">
+                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
+                        <h3><a class="uk-link-heading uk-margin-remove" href="https://devpost.com/software/braille-vote">Braille Vote</a></h3>
+                        <p class="uk-margin-remove">Our Braille Vote machine makes voting easier and more independent for the visually impaired.</p>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="" uk-cover></a>
+                    <img src="projects/noteworthy.jpg" alt="" uk-cover uk-img="target: !.uk-slideshow-items">
+                    </a>
+                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
+                        <h3><a class="uk-link-heading uk-margin-remove" href="https://devpost.com/software/noteworthy-41o8lt">NoteWorthy</a></h3>
+                        <p class="uk-margin-remove">Text Summary and Analysis Generator</p>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="projects/codeclassroom.jpg" alt="" uk-cover uk-img="target: !.uk-slideshow-items">
+                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
+                        <h3><a class="uk-link-heading uk-margin-remove" href="https://devpost.com/software/braille-vote">CodeClassroom</a></h3>
+                        <p class="uk-margin-remove">CodeClassroom provides an easy and simple way to test and grade programs written in Java.</p>
+                    </div>
+                </li>
+                
+            </ul>
+
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+            <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+        </div>
+
+        
+
+    </body>
+</html>
