@@ -36,45 +36,75 @@
 </html>
 
 <script>
+var numPhotos = 158;
 var folder = "photos/";
+var extension = ".jpeg"
+var imageGridHTML="";
 
-$.ajax({
-    url : folder,
-    success: function (data) {
+imageGridHTML += "" +
+                    "<div class=\"uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-collapse uk-grid \" uk-grid=\"masonry: true \">" +
+                "";
 
-        var imageGridHTML="";
-        var columnsInRow=0;
-        imageGridHTML += "" +
-                        "<div class=\"uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-collapse uk-grid \" uk-grid=\"masonry: true \">" +
-                     "";
-
-        $(data).find("a").attr("href", function (i, val) {
-            // if (columnsInRow===0){
-                     
-                // }
-            if( val.match(/\.(jpe?g|png|gif)$/) ) { 
-                console.log(""+ folder + val +"");
-                imageGridHTML += "" + 
+for(i = 0; i <= numPhotos; i++){
+    imageGridHTML += "" + 
                     "<div>" +
                         "<div class=\"uk-card uk-card-default uk-card-hover uk-padding \">" +
                             "<div class=\"uk-card-media-top \">" +
-                                "<img src='"+ folder + val +"' alt=\"\">" +
+                                "<img src='"+ folder + i + extension +"' alt=\"\">" +
                             "</div>" +
                         "</div>" +
                     "</div>" +
                 "";
+}
+
+         imageGridHTML += "" + 
+                         "</div>" +
+                     ""
+         $("body").append(imageGridHTML);
+
+
+
+
+
+// var folder = "photos/";
+
+// $.ajax({
+//     url : folder,
+//     success: function (data) {
+
+//         var imageGridHTML="";
+//         var columnsInRow=0;
+//         imageGridHTML += "" +
+//                         "<div class=\"uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-collapse uk-grid \" uk-grid=\"masonry: true \">" +
+//                      "";
+
+//         $(data).find("a").attr("href", function (i, val) {
+//             // if (columnsInRow===0){
+                     
+//                 // }
+//             if( val.match(/\.(jpe?g|png|gif)$/) ) { 
+//                 console.log(""+ folder + val +"");
+//                 imageGridHTML += "" + 
+//                     "<div>" +
+//                         "<div class=\"uk-card uk-card-default uk-card-hover uk-padding \">" +
+//                             "<div class=\"uk-card-media-top \">" +
+//                                 "<img src='"+ folder + val +"' alt=\"\">" +
+//                             "</div>" +
+//                         "</div>" +
+//                     "</div>" +
+//                 "";
                 
-                // columnsInRow = (columnsInRow+1)%3;
-            } 
-            // if (columnsInRow===0){
+//                 // columnsInRow = (columnsInRow+1)%3;
+//             } 
+//             // if (columnsInRow===0){
                     
-                // }
-        });
-        imageGridHTML += "" + 
-                        "</div>" +
-                    ""
-        $("body").append(imageGridHTML);
-    }
-});    
+//                 // }
+//         });
+//         imageGridHTML += "" + 
+//                         "</div>" +
+//                     ""
+//         $("body").append(imageGridHTML);
+//     }
+// });    
     
 </script>
