@@ -28,5 +28,5 @@ JSDOM.fromURL("https://www.devpost.com/Ezra-Bernstein").then(dom => {
   }
 
   
-  //$("body").append(html);
+  $("body").append(html);
 });
