@@ -12,17 +12,29 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit-icons.min.js"></script>
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+
+        <script src="uikit/dist/js/uikit-icons.min.js"></script>
         <script> 
-            $(function(){
-                $("#navbar").load("navbar.html"); 
-            });
+            // $(function(){
+            //     $("#navbar").load("navbar.html"); 
+            // });
         </script>
 
     </head>
     <body>
-        <div id="navbar"></div>
+        <div uk-sticky="show-on-up: true; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-inactive: uk-navbar-transparent uk-light; top: 200">
+            <nav class="uk-position-top uk-navbar-container" uk-navbar> 
+                <div class="uk-navbar-center">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="home.html">Home</a></li>
+                        <li><a href="photos.html">Photos</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
 
-        <div class="uk-height-large uk-background-cover uk-overflow-hidden uk-dark uk-flex uk-flex-top " style="background-image: url('images/home.jpeg');">
+        <div class="uk-height-viewport uk-background-cover uk-overflow-hidden uk-dark uk-flex uk-flex-top" style="background-image: url('images/home.jpeg');">
             <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical uk-flex-inline">
                 
                     <div class="uk-animation-slide-left-medium" >
@@ -35,11 +47,15 @@
                         <h1 class="uk-text-center">.com</h1>
                     </div>
             </div>
+
+            <div class="uk-overlay uk-dark uk-position-bottom-center">
+                <a href="#target" class="uk-icon-button" uk-icon="chevron-down" uk-scroll></a>
+            </div>
         </div>
 
         
 
-        <h1 class="uk-heading-medium uk-heading-line uk-text-center uk-margin-large-bottom"><span>Hackathon Projects</span></h1>
+        <h1 class="uk-heading-medium uk-heading-line uk-text-center uk-margin-large-bottom" id="target"><span>Hackathon Projects</span></h1>
 
 
         <div class="uk-position-relative uk-margin-large-left uk-margin-large-right uk-margin-medium-bottom uk-visible-toggle uk-dark" tabindex="-1" uk-slideshow="animation: pull; autoplay: true; autoplay-interval: 5000">
@@ -80,8 +96,8 @@
                 
             </ul>
 
-            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+            <a class="uk-slidenav-large uk-position-center-left uk-position-small uk-hidden-hover uk-light" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+            <a class="uk-slidenav-large uk-position-center-right uk-position-small uk-hidden-hover uk-light" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
             <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
         </div>
 
@@ -151,8 +167,22 @@
             <div>
                 <div class="uk-tile uk-tile-secondary">
                     <h2>StoryTime</h2>
-                    <a href=#><img class="uk-border-circle"src="images/story_time.jpg"></a>
+                    <a href=""><img class="uk-border-circle"src="images/story_time.jpg"></a>
                     <p>A game I created where each person writes a chapter of a story, but can only read the previous chapter.</p>
+                </div>
+            </div>
+            <div>
+                <div class="uk-tile uk-tile-secondary">
+                    <h2>OcclupanidBot</h2>
+                    <a href="https://twitter.com/OcclupanidBot"><img class="uk-border-circle"src="images/occlupanidbot.png"></a>
+                    <p>A Twitter bot I made, which plays games, and gives you stats on your account.</p>
+                </div>
+            </div>
+            <div>
+                <div class="uk-tile uk-tile-secondary">
+                    <h2>What's next?</h2>
+                    <a href=""><img class="uk-border-circle"src="images/question.png"></a>
+                    <p>I am continually working on new projects, and looking for new ideas</p>
                 </div>
             </div>
         </div>
@@ -164,7 +194,7 @@
 
 
         <div class="uk-section uk-section-muted uk-padding-large">
-                <h5>Ezra Bernstein &#x24B8;  2019</h5>
+                <h5>Ezra Bernstein &#x24B8;  2020</h5>
         </div>
         
 
