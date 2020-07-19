@@ -5,11 +5,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- UIkit CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/css/uikit.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
 
         <!-- UIkit JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit-icons.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
         <script> 
@@ -48,34 +48,35 @@
             </div>
         </div>
 
-        <div class="uk-overlay uk-dark uk-position-bottom-center">
+        <div class="uk-position-bottom-center uk-position-large">
             <a href="#target" class="uk-icon-button" uk-icon="chevron-down" uk-scroll></a>
         </div>
 
         <div class="uk-section uk-section-large uk-section-default" id="target">
              <div class="uk-container">
-                <div class="uk-grid-divider uk-child-width-1-3" uk-grid>
+                <div class="uk-grid-divider uk-child-width-1-3@m uk-child-width-1-1@s" uk-grid>
                     <div>
-                        <h1 class="uk-heading-small uk-text-right">About Me</h1>
+                        <h1 class="uk-heading-small uk-text-center" uk-scrollspy="cls:uk-animation-fade uk-animation-slide-left-medium; delay: 250">About Me</h1>
                     </div>
                     <div class="uk-width-expand">
-                        <p class="uk-position-center-left uk-position-relative">Hi! My name is Ezra Bernstein, and I am a student developer interested in STEM, especially computer science, astronomy, and physics.
+                        <p class="uk-position-relative uk-position-center-left" uk-scrollspy="cls:uk-animation-fade uk-animation-slide-right-medium; delay: 250">Hi! My name is Ezra Bernstein, and I am a student developer interested in STEM, especially computer science, astronomy, and physics.
                             I enjoy music, sports, and photography as well.</p>
                     </div>
                 </div>
             </div>
         </div>
+        
         <div class="uk-section uk-section-large uk-section-secondary">
              <div class="uk-container">
-                <div class="uk-grid-divider uk-child-width-1-3" uk-grid>
-                    <div class="uk-width-expand">
-                        <p class="uk-text-right">This site was created using UIKit, and is hosted on Google Cloud Storage. I wrote the entire site myself.
+                <div class="uk-grid-divider uk-child-width-1-3@m uk-child-width-1-1@s" uk-grid>
+                    <div class="uk-width-expand uk-flex uk-flex-last@s uk-flex-first@m">
+                        <p class="uk-text-right" uk-scrollspy="cls:uk-animation-fade uk-animation-slide-left-medium; delay: 250">This site was created using UIKit, and is hosted on Google Cloud Storage. I wrote the entire site myself.
                             All photos seen on this site were taken by me, although some are edited.
                             Further information about its construction can be viewed on my GitHub page (link below).
                             When I started, I had some experience with creating websites, but I was new to UIKit and Google hosting.</p>
                     </div>
                     <div>
-                        <h1 class="uk-heading-small uk-position-center-left uk-position-relative">About This Site</h1>
+                        <h1 class="uk-heading-small uk-position-center-left uk-position-relative" uk-scrollspy="cls:uk-animation-fade uk-animation-slide-right-medium; delay: 250">About This Site</h1>
                     </div>
                     
                 </div>
@@ -84,13 +85,13 @@
 
         <div class="uk-section uk-section-large uk-section-default">
             <div class="uk-container">
-               <div class="uk-grid-divider uk-child-width-1-3" uk-grid>
+               <div class="uk-grid-divider uk-child-width-1-3@m uk-child-width-1-1@s" uk-grid>
                    <div>
-                       <h1 class="uk-heading-small uk-text-right">Links to My Platforms</h1>
+                       <h1 class="uk-heading-small uk-text-center" uk-scrollspy="cls:uk-animation-fade uk-animation-slide-left-medium; delay: 250">Links to My Platforms</h1>
                    </div>
                    <div class="uk-width-expand">
-                        <p class="uk-position-center-left uk-position-relative">Here are links to my platforms, both social and techy. Please note that the
-                            email is an image to avoid bot spam
+                        <p class="uk-position-center-left uk-position-relative" uk-scrollspy="cls:uk-animation-fade uk-animation-slide-right-medium; delay: 250">Here are links to my platforms, both social and techy. Please note that the
+                            email is an image to avoid bot spam.
                         </p>
                    </div>
                </div>
@@ -99,7 +100,7 @@
 
        <div class="uk-section uk-section-small uk-section-default">
         <div class="uk-container">
-            <div class="uk-grid-match uk-child-width-expand@m" uk-grid>
+            <div class="uk-grid-match uk-child-width-expand@m" uk-grid uk-scrollspy="cls:uk-animation-fade uk-animation-slide-bottom-medium; target: .uk-card; delay: 150">
                 <div>
                     <div class="uk-card uk-card-secondary uk-card-body">
                         <a href="https://github.com/Ezra-Bernstein"><u><h3 class="uk-card-title">GitHub</h3></u></a>

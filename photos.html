@@ -5,11 +5,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- UIkit CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/css/uikit.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
 
         <!-- UIkit JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit-icons.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
         <script> 
@@ -48,7 +48,7 @@
             </div>
         </div>
 
-        <div class="uk-overlay uk-dark uk-position-bottom-center">
+        <div class="uk-position-bottom-center uk-position-large">
             <a href="#target" class="uk-icon-button" uk-icon="chevron-down" uk-scroll></a>
         </div>
 
@@ -62,7 +62,7 @@ var extension = ".jpeg"
 var imageGridHTML="";
 
 imageGridHTML += "" +
-                    "<div class=\"uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-collapse uk-grid \" uk-grid=\"masonry: true \" uk-lightbox=\"animation: slide\">" +
+                    "<div class=\"uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-collapse uk-grid \" uk-grid=\"masonry: true \" uk-lightbox=\"animation: slide\"  uk-scrollspy=\"cls: uk-animation-fade; target: .uk-card; delay: 100\">" +
                 "";
 
 for(i = 0; i <= numPhotos; i++){
